@@ -1,0 +1,71 @@
+#chapter 2
+
+
+#BOOLEAN VALUES
+
+# != not equal
+# <= less or equal
+# >= greater or equal
+
+# NOT - simple single expression
+# AND - both must be True
+# OR - one must be True
+# order of operation not, and, or
+
+#FLOW CONTROL - the first True statement is executed
+
+# IF
+name=str(input('name please?'))
+if name == 'Alice':
+    print('hi alice')
+
+#ELSE - guarantees a clause will be executed
+name=str(input('name please?'))
+if name == 'Alice':
+    print('hi Alice')
+else:
+    print('stranger')
+
+
+#ELIF - once a clause is true, all others are skipped.
+    #if all ELIFs are false, none will be executed
+name=str(input('name please?'))
+if name == 'Alice':
+    print('hi alice')
+elif name == 'Cindie':
+    print('hi cindie')
+elif name ==('John'):
+    print('HI John')
+else:
+    print('go away')
+
+
+#WHILE - Continuous loop execution. while keeps looping while true
+spam = 0
+while spam < 5:
+    print('you\'re awesome')
+    spam = spam + 1
+    #need a clause to end the loop!
+
+#BREAK - Break out of a loop
+while True:
+    name = input('what\'s your name?')
+    if name == 'Cindie':
+        break
+    print('incorrect')  #letting the user know they are incorrect
+print('you broke the cycle')
+
+
+#CONTINUTE - When reached, this statement will jump back to start of function
+while True:
+    name = input('name?')
+    if name != 'Cindie':
+        continue
+    print('hello Cindie')
+    password = input('type the password dog')
+    if password == 'dog':
+        break
+    #this continues when the first portion becomes "True". normally it would end there.
+    #Because it's a 'While" loop, False answers will make it an infinant loop
+    #once it's all true, the function hits the "break' key word.
+
